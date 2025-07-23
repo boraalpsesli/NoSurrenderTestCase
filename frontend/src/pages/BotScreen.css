@@ -1,0 +1,15 @@
+.botscreen-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #111118 0%, #353345 100%);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-container {
+  width: 340px;
+
+  margin: 16px 26px;
+}
