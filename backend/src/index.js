@@ -21,6 +21,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.use('/api/v1/auth', require('./routes/auth'))
 app.use('/api/v1/progress', require('./routes/progress'))
 app.use('/api/v1/level-up', require('./routes/levelUp'))
 app.use('/api/v1/energy', require('./routes/energy'))

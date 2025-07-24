@@ -10,6 +10,50 @@
 
 .inner-container {
   width: 340px;
-
   margin: 16px 26px;
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 8px 0;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.username {
+  font-family: 'Galano Grotesque', 'Inter', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #F4BC79;
+}
+
+.logout-btn {
+  background: rgba(35, 34, 47, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-family: 'Galano Grotesque', 'Inter', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: #EE39A8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 4px rgba(238, 57, 168, 0.1);
+}
+
+.logout-btn:hover {
+  background: rgba(238, 57, 168, 0.1);
+  border-color: #EE39A8;
+  box-shadow: 0px 0px 8px rgba(238, 57, 168, 0.3);
+  transform: translateY(-1px);
+}
+
+.logout-btn:active {
+  transform: translateY(0);
+  box-shadow: 0px 0px 4px rgba(238, 57, 168, 0.2);
 }

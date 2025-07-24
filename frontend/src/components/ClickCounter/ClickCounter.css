@@ -1,0 +1,131 @@
+.click-counter-container {
+  background: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 9999px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.click-counter-label {
+  font-family: 'Galano Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-align: center;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.click-counter-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.click-counter-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  
+}
+
+.click-counter-btn {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  opacity: 0.5;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-family: 'Galano Grotesque', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, opacity 0.2s;
+  margin: 0 2px;
+}
+
+.click-counter-btn:hover:not(:disabled) {
+  background: #F4BC79;
+  opacity: 1;
+  color: #000A2E;
+  box-shadow: inset 0px 4.63px 0px rgba(255, 255, 255, 0.55);
+}
+
+.click-counter-btn:disabled {
+  background: transparent;
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+
+.click-counter-input {
+  width: 60px;
+  height: 32px;
+  background: #F4BC79;
+  border: none;
+  border-radius: 10px;
+  color: #000A2E;
+  text-align: center;
+  font-family: 'Galano Grotesque', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: default;
+  user-select: none;
+  pointer-events: none;
+  box-shadow: inset 0px 4.63px 0px rgba(255, 255, 255, 0.55);
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+  margin: 0 2px;
+}
+
+.click-counter-input::-webkit-outer-spin-button,
+.click-counter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.click-counter-input:focus {
+  outline: none;
+}
+
+.click-counter-info {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.energy-cost {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Galano Grotesque', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #F4BC79;
+}
+
+.energy-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.progress-gain {
+  font-family: 'Galano Grotesque', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  color: #EE39A8;
+} 

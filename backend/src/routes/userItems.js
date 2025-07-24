@@ -4,7 +4,8 @@ const UserItem = require('../models/UserItem');
 
 router.get('/:userId', async (req, res) => {
   try {
-    const userItems = await UserItem.find({ userId: req.params.userId }).populate('itemId');
+    const { userId } = req.params;
+    const userItems = await UserItem.find({ userId: userId }).populate('itemId');
     const result = userItems.map(ui => {
       const currentItem = ui.itemId.levels.find(lvl => lvl.level === ui.level);
       return {
